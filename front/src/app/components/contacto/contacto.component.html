@@ -1,0 +1,105 @@
+<div class="jspPane">
+    <div class="inner">
+        <h2>Contacto</h2>
+        <div class="title-divider"></div>
+        <h3><strong>Sigamos en contacto</strong></h3>
+        <p style="text-align: justify;">
+            Si continúas interesado en mi perfil, puedes contactarme por alguno de los medios que dejo a continuación, o enviarme directamente un mensaje!.
+
+        </p>
+        <br>
+
+        <div class="full-divider"></div>
+        <div class="row">
+
+            <div class="col-lg-5 col-sm-6 col-12 padding_col_job">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-4 col-2">
+                        <i class="fa fa-map-marker logo_work"></i>
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-10 direction">
+                        <strong>Jorge Anderson Montoya Orjuela</strong>
+                        <br> 
+                       <strong> Armenia Quindío, Colombia.</strong>
+                    </div>
+                    <!---->
+                    <div class="col-lg-3 col-sm-4 col-2 mt-2">
+                        <i class="fa fa-phone logo_work"></i>
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-10 direction mt-2">
+                        <strong>Teléfono</strong>
+                        <br> <strong>(+57) -3113229014</strong>
+                    </div>
+                    <!---->
+                    <div class="col-lg-3 col-sm-4 col-2 mt-2">
+                        <i class="fa fa-envelope logo_work"></i>
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-10 direction mt-2">
+                        <strong>Correo</strong>
+                        <br> <strong>jamontoyao@uqvirtual.edu.co</strong>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12 padding_col_content" style="text-align: justify;">
+                <h3 style="margin: 0%;"><strong>Encuentrame en redes sociales</strong></h3>
+
+                <div class="contact-social margin-top30">
+                    <a type="button" class="btn btn-outline-success btn-sm mt-4 mr-4" href="https://www.facebook.com/jorgea.montoya.7" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+
+                    <a type="button" class="btn btn-outline-success btn-sm mt-4 mr-4" href="" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a type="button" class="btn btn-outline-success btn-sm mt-4 mr-4" href="https://www.youtube.com/channel/UC8FV0Pgvca7FAOMexmIvJjA" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a type="button" class="btn btn-outline-success btn-sm mt-4 mr-4" href="https://www.linkedin.com/in/jorge-anderson-montoya-orjuela-ba0657218" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="full-divider"></div>
+        <div class="content">
+            <form [formGroup]="forma" (ngSubmit)="enviar()" novalidate="novalidate">
+                <div class="row">
+                    <div class="col-12">
+                        <h3><strong>Déjame un mensaje</strong></h3>
+                    </div>
+
+                    <div class="col-12">
+                        <input style="width: 100%;" type="text" id="name" placeholder="Tu Nombre..." class="form-control" formControlName="name" [class.is-invalid]="nameNovalido">
+                        <small *ngIf="nameNovalido" class="text-danger">
+                            Campo "Nombre" no valido           
+                        </small>
+                    </div>
+                    <div class="col-12  mt-2">
+                        <input style="width: 100%;" name="email" type="text" id="email" placeholder="Tu correo..." class="form-control" formControlName="email" [class.is-invalid]="emailNovalido">
+                        <small *ngIf="emailNovalido" class="text-danger">
+                        Campo "Correo" no valido           
+                    </small>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <textarea style="width: 100%;" name="message" id="message" cols="45" rows="5" placeholder="Tu Mensaje..." class="form-control" formControlName="message" [class.is-invalid]="messageNovalido">
+                    </textarea>
+                        <small *ngIf="messageNovalido" class="text-danger">
+                        Campo "Mensaje" no valido           
+                    </small>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <button style="width: 100px; font-size: 16px;" type="submit" class="btn btn-outline-success">                    
+                    <strong>Dí, hola!</strong>
+                </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+</div>

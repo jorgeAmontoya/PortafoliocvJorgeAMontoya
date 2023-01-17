@@ -1,0 +1,148 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/purple-green.css';
+
+.custom-pagination .ngx-pagination .current {
+    background: #009B07A3;
+}
+/* Contorno de la "card" donde se muestran los datos del producto*/
+.tabledata{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 20px 20px !important;
+    width: 90%;
+    margin: auto;
+    opacity: 1;
+}
+
+
+
+
+
+html {
+    background-color:#1a1a1a;
+    color: #818181 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* estilo y color para titulo "datos el producto"*/
+/* Atributo: !important; Da prioridad al css sobre el boostrap*/
+.encabezado{
+    font: Semibold 25px/33px Segoe UI !important;
+    letter-spacing: 0px !important;
+    color: #5FB230 !important;
+    opacity: 0.52 !important;
+}
+
+/* estilo y color para letra que nombra los datos datos*/
+.dataname{
+    font: Semibold 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;  
+}
+
+/* estilo y color para la letra de los datos*/
+.data{
+    font: Regular 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+/* Para colorear las filas dentro de la tabla*/
+tr:nth-child(even) {
+    background: #009B0717 0% 0% no-repeat padding-box;
+} 
+
+/* Para contorno de la tabla*/
+.tableborder{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 20px 20px !important;
+    opacity: 1;
+}
+
+/*tipo y color de letra en los encabeados de la tabla*/
+.lettertable{
+    font: Semibold 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+/*tipo y color de letra en datos dentro de la tabla*/
+.lettertabledata{
+    font: Regular 13px/17px Segoe UI;
+    letter-spacing: 0px;
+    /*color: #7B7B7B; Con este creo que queda muy opaco, abajo lo deje más oscuro*/
+    color: rgb(82, 81, 81);
+    opacity: 1;
+}
+
+
+/*tipo y color de letra en datos dentro de la tabla que son enlaces (bodegas)*/
+.lettertabledataone{
+    font: Regular 13px/17px Segoe UI;
+    letter-spacing: 0px;
+    color: #009B07;
+    opacity: 1;
+}
+
+/* Para contorn de finputs en formularios*/
+.formularios{
+    border: 1px solid #878787;
+    border-radius: 0px 16px 16px 0px;
+    opacity: 1;
+}
+
+/*Para campos oblogatorios*/
+.campos-obli{
+    font: Regular 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    color: #5FB230;
+    opacity: 1;
+}
+
+/*Borde caja de arriba*/
+.borde-arriba{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 20px 20px !important;
+    opacity: 1;
+}
+
+/*Borde caja pricipal*/
+.borde-prin{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 25px !important;
+    opacity: 1;
+}
+
+/*Para los titulos grandes "Datos personales"*/
+.letratitulos{
+    font: Semibold 20px/27px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+
+/*Para los nombres de los input "Nombre, correo..."*/
+.letraitem{
+    font: Regular 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+/*Forma de los botones de ver usuarios y codigos de acceso */
+.buttonform{
+    border: 2px solid #5CBF60;
+    border-radius: 22px;
+    opacity: 1;
+}
+
+.boxes_size{
+    /*top: .8rem;*/
+    width: 1.1rem;
+    height: 1.1rem;
+    }
+    
+    .center_object{
+        position: relative !important;
+    }
